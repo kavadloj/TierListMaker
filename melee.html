@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Melee Tier List</title>
+  <link href="tierlist.css" rel="stylesheet"/>
+  <script>
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+    function drop(ev, el) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      el.appendChild(document.getElementById(data));
+    }
+  </script>
+</head>
+<body>
+    <div class="buttons" id="backbutton" onclick="location.href = 'home.html'">Back</div>
+    <div class="buttons" id="resetbutton" onClick="window.location.reload();">Reset</div>
+    <h2>Smash 64 Tier List</h2>
+    <div class="tierlabel" id="tier1label" onclick="location.href='info.html#toptier'"><p>Top Tier</p></div>
+    <div class="tierblock" ondrop="drop(event, this)" ondragover="allowDrop(event)"></div>
+    <br/>
+    <div class="tierlabel" id="tier2label" onclick="location.href='info.html#hightier'"><p>High Tier</p></div>
+    <div class="tierblock" ondrop="drop(event, this)" ondragover="allowDrop(event)"></div>
+    <br/>
+    <div class="tierlabel" id="tier3label" onclick="location.href='info.html#midtier'"><p>Mid Tier</p></div>
+    <div class="tierblock" ondrop="drop(event, this)" ondragover="allowDrop(event)"></div>
+    <br/>
+    <div class="tierlabel" id="tier4label" onclick="location.href='info.html#lowtier'"><p>Low Tier</p></div>
+    <div class="tierblock" ondrop="drop(event, this)" ondragover="allowDrop(event)"></div>
+
+  <br/><br/>
+  <div class="container">
+    <div class="character" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+      <img src="https://www.ssbwiki.com/images/thumb/6/60/Mario_SSBM.jpg/150px-Mario_SSBM.jpg" draggable="true" ondragstart="drag(event)" id="mario" width="60" height="80">
+    </div>
+    <div class="character" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+      <img src="https://www.ssbwiki.com/images/thumb/4/4e/Donkey_Kong_SSBM.jpg/150px-Donkey_Kong_SSBM.jpg" draggable="true" ondragstart="drag(event)" id="dk" width="60" height="80">
+    </div>
+    <div class="character" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+      <img src="https://www.ssbwiki.com/images/thumb/1/1f/Link_SSBM.jpg/150px-Link_SSBM.jpg" draggable="true" ondragstart="drag(event)" id="link" width="60" height="80">
+    </div>
+    <div class="character" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+      <img src="https://www.ssbwiki.com/images/thumb/f/fb/Samus_SSBM.jpg/150px-Samus_SSBM.jpg" draggable="true" ondragstart="drag(event)" id="samus" width="60" height="80">
+    </div>
+    <div class="character" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+      <img src="https://www.ssbwiki.com/images/thumb/0/0a/Yoshi_SSBM.jpg/150px-Yoshi_SSBM.jpg" draggable="true" ondragstart="drag(event)" id="yoshi" width="60" height="80">
+    </div>
+    <div class="character" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+      <img src="https://www.ssbwiki.com/images/thumb/e/e6/Kirby_SSBM.jpg/150px-Kirby_SSBM.jpg" draggable="true" ondragstart="drag(event)" id="kirby" width="60" height="80">
+    </div>
+    <div class="character" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+      <img src="https://www.ssbwiki.com/images/thumb/b/bf/Fox_SSBM.jpg/150px-Fox_SSBM.jpg" draggable="true" ondragstart="drag(event)" id="fox" width="60" height="80">
+    </div>
+    <div class="character" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+      <img src="https://www.ssbwiki.com/images/thumb/b/bf/Pikachu_SSBM.jpg/150px-Pikachu_SSBM.jpg" draggable="true" ondragstart="drag(event)" id="pikachu" width="60" height="80">
+    </div>
+    <div class="character" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+      <img src="https://www.ssbwiki.com/images/thumb/6/65/Luigi_SSBM.jpg/150px-Luigi_SSBM.jpg" draggable="true" ondragstart="drag(event)" id="luigi" width="60" height="80">
+    </div>
+    <div class="character" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+      <img src="https://www.ssbwiki.com/images/thumb/6/64/Ness_SSBM.jpg/150px-Ness_SSBM.jpg" draggable="true" ondragstart="drag(event)" id="ness" width="60" height="80">
+    </div>
+    <div class="character" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+      <img src="https://www.ssbwiki.com/images/thumb/7/77/Captain_Falcon_SSBM.jpg/150px-Captain_Falcon_SSBM.jpg" draggable="true" ondragstart="drag(event)" id="falcon" width="60" height="80">
+    </div>
+    <div class="character" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+      <img src="https://www.ssbwiki.com/images/thumb/e/eb/Jigglypuff_SSBM.jpg/150px-Jigglypuff_SSBM.jpg" draggable="true" ondragstart="drag(event)" id="jiggly" width="60" height="80">
+    </div>
+    <div class="character" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+      <img src="https://www.ssbwiki.com/images/thumb/d/db/Peach_SSBM.jpg/150px-Peach_SSBM.jpg" draggable="true" ondragstart="drag(event)" id="peach" width="60" height="80">
+    </div>
+    <div class="character" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+      <img src="https://www.ssbwiki.com/images/thumb/0/03/Bowser_SSBM.jpg/150px-Bowser_SSBM.jpg" draggable="true" ondragstart="drag(event)" id="bowser" width="60" height="80">
+    </div>
+    <div class="character" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+      <img src="https://www.ssbwiki.com/images/thumb/7/71/Dr._Mario_SSBM.jpg/150px-Dr._Mario_SSBM.jpg" draggable="true" ondragstart="drag(event)" id="drmario" width="60" height="80">
+    </div>
+    <div class="character" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+      <img src="https://www.ssbwiki.com/images/thumb/4/4e/Zelda_SSBM.jpg/150px-Zelda_SSBM.jpg" draggable="true" ondragstart="drag(event)" id="zelda" width="60" height="80">
+    </div>
+    <div class="character" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+      <img src="https://www.ssbwiki.com/images/thumb/4/48/Sheik_SSBM.jpg/150px-Sheik_SSBM.jpg" draggable="true" ondragstart="drag(event)" id="sheik" width="60" height="80">
+    </div>
+    <div class="character" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+      <img src="https://www.ssbwiki.com/images/thumb/6/67/Young_Link_SSBM.jpg/150px-Young_Link_SSBM.jpg" draggable="true" ondragstart="drag(event)" id="younglink" width="60" height="80">
+    </div>
+    <div class="character" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+      <img src="https://www.ssbwiki.com/images/thumb/2/27/Ganondorf_SSBM.jpg/150px-Ganondorf_SSBM.jpg" draggable="true" ondragstart="drag(event)" id="ganon" width="60" height="80">
+    </div>
+    <div class="character" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+      <img src="https://www.ssbwiki.com/images/thumb/1/17/Falco_SSBM.jpg/150px-Falco_SSBM.jpg" draggable="true" ondragstart="drag(event)" id="falco" width="60" height="80">
+    </div>
+    <div class="character" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+      <img src="https://www.ssbwiki.com/images/thumb/2/2c/Pichu_SSBM.jpg/150px-Pichu_SSBM.jpg" draggable="true" ondragstart="drag(event)" id="pichu" width="60" height="80">
+    </div>
+    <div class="character" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+      <img src="https://www.ssbwiki.com/images/thumb/2/27/Mewtwo_SSBM.jpg/150px-Mewtwo_SSBM.jpg" draggable="true" ondragstart="drag(event)" id="mewtwo" width="60" height="80">
+    </div>
+    <div class="character" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+      <img src="https://www.ssbwiki.com/images/thumb/1/10/Ice_Climbers_SSBM.jpg/150px-Ice_Climbers_SSBM.jpg" draggable="true" ondragstart="drag(event)" id="iceclimbers" width="60" height="80">
+    </div>
+    <div class="character" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+      <img src="https://www.ssbwiki.com/images/thumb/d/dd/Marth_SSBM.jpg/150px-Marth_SSBM.jpg" draggable="true" ondragstart="drag(event)" id="marth" width="60" height="80">
+    </div>
+    <div class="character" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+      <img src="https://www.ssbwiki.com/images/thumb/f/fc/Roy_SSBM.jpg/150px-Roy_SSBM.jpg" draggable="true" ondragstart="drag(event)" id="roy" width="60" height="80">
+    </div>
+    <div class="character" ondrop="drop(event, this)" ondragover="allowDrop(event)">
+      <img src="https://www.ssbwiki.com/images/thumb/d/d3/Mr._Game_%26_Watch_SSBM.jpg/150px-Mr._Game_%26_Watch_SSBM.jpg" draggable="true" ondragstart="drag(event)" id="gnw" width="60" height="80">
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+body {
+    margin: 2%;
+    background-color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+}
+.info{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+h2 {
+    border-radius: 25px;
+    text-align: center;
+    margin: 5px;
+    width: 100%;
+    background-image: linear-gradient(lightgray , white);
+}
+h4 {
+    border-radius: 25px;
+    text-align: center;
+    margin: 5px;
+    width: 100%;
+    background-color: white;
+}
+h4.games {
+    background-image: linear-gradient(#6A6DA0, rgb(201, 197, 212));
+}
+#toptier {
+    background-image: linear-gradient(rgb(182, 93, 93), #FF7F7F);
+}
+#hightier {
+    background-image: linear-gradient(rgb(187, 140, 93), #FEBF7E);
+}
+#midtier {
+    background-image: linear-gradient(rgb(175, 175, 88), #FFFF7F);
+}
+#lowtier {
+    background-image: linear-gradient(rgb(82, 167, 82), #7FFF7F);
+}
+p {
+    font-weight: normal;
+    color: rgb(214, 214, 214);
+    background-color: #2b2b2b;
+    margin-left: 8%;
+    margin-right: 8%;
+    padding: 10px;
+    border-radius: 25px;
+    border: 3px solid #303030;
+}
+#backbutton {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    float: left;
+    border-right: 10px solid black;
+}
+.buttons    {
+    width: 84px;
+    height: 16px;
+    padding: 6px;
+    text-align: center;
+    background-color:  rgb(175, 174, 174);
+    cursor: pointer;
+    background-image: linear-gradient(rgb(104, 102, 102), rgb(175, 174, 174));
+}
+.buttons:hover{
+    background-image: linear-gradient(rgb(49, 48, 48), rgb(109, 107, 107));
+}
